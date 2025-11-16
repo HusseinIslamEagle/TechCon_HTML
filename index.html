@@ -3,95 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechCon 2024 - Innovate, Connect, Thrive</title>
-    <!-- Load Tailwind CSS via CDN for styling -->
+    <title>TechCon 2024 - Global Technology Conference</title>
+    <!-- Load Tailwind CSS via CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Configure Tailwind for the Inter font and custom colors -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f7fafc; /* Light gray background */
+            background-color: #f8f9fa; /* Light, clean background */
+        }
+        /* Custom styles for modern shadow effect */
+        .shadow-3xl {
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
         }
     </style>
 </head>
 <body class="min-h-screen flex flex-col antialiased">
 
-    <!-- HEADER SECTION -->
-    <header class="bg-indigo-700 text-white shadow-lg sticky top-0 z-10">
-        <div class="container mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center">
-            <!-- Conference Title -->
-            <h1 class="text-3xl font-extrabold tracking-tight mb-3 md:mb-0">
+    <!-- HEADER: Conference Identity and Primary Navigation -->
+    <header class="bg-gray-900 text-white shadow-xl sticky top-0 z-20">
+        <div class="container mx-auto px-4 py-5 flex flex-col md:flex-row justify-between items-center">
+            <!-- Conference Name (H1 - most important element) -->
+            <h1 class="text-3xl font-extrabold tracking-tight mb-3 md:mb-0 text-indigo-400">
                 TechCon 2024
             </h1>
 
             <!-- Navigation Menu -->
             <nav class="space-x-4">
-                <ul class="flex space-x-2 md:space-x-6 text-lg font-medium">
-                    <li><a href="about.html" class="hover:text-indigo-200 transition duration-300 p-2 rounded-lg">About</a></li>
-                    <li><a href="schedule.html" class="hover:text-indigo-200 transition duration-300 p-2 rounded-lg">Schedule</a></li>
-                    <li><a href="register.html" class="bg-indigo-500 hover:bg-indigo-400 text-white px-4 py-2 rounded-full transition duration-300 shadow-md">Register</a></li>
-                    <li><a href="contact.html" class="hover:text-indigo-200 transition duration-300 p-2 rounded-lg">Contact</a></li>
+                <ul class="flex space-x-4 md:space-x-8 text-lg font-medium">
+                    <li><a href="about.html" class="hover:text-indigo-300 transition duration-200 p-2 rounded-md">About</a></li>
+                    <li><a href="schedule.html" class="hover:text-indigo-300 transition duration-200 p-2 rounded-md">Schedule</a></li>
+                    <li><a href="register.html" class="bg-indigo-600 hover:bg-indigo-700 text-white px-5 py-2 rounded-full transition duration-300 shadow-lg transform hover:scale-105">Register</a></li>
+                    <li><a href="contact.html" class="hover:text-indigo-300 transition duration-200 p-2 rounded-md">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- MAIN CONTENT SECTION -->
-    <main class="flex-grow container mx-auto px-4 py-12">
+    <!-- MAIN: Dominant content of the homepage -->
+    <main class="flex-grow container mx-auto px-4 py-16">
 
         <!-- Conference Introduction Section -->
-        <section class="bg-white p-8 md:p-12 rounded-xl shadow-2xl border border-gray-100">
-            <h2 class="text-5xl font-bold text-gray-900 mb-6 border-b-4 border-indigo-500 pb-2">
-                Innovate, Connect, Thrive.
+        <section class="bg-white p-6 sm:p-10 md:p-16 rounded-2xl shadow-3xl border-t-8 border-indigo-500 max-w-7xl mx-auto">
+            <h2 class="text-4xl sm:text-5xl font-bold text-gray-800 mb-6">
+                Redefining Tomorrow: AI & Sustainability.
             </h2>
             
-            <!-- Brief Description -->
-            <p class="text-xl text-gray-600 mb-10 leading-relaxed max-w-4xl">
-                Join thousands of industry leaders, pioneering developers, and creative thinkers at **TechCon 2024**. This year, we're focusing on the convergence of AI, sustainable technology, and decentralized systems. Prepare for three days of cutting-edge keynotes, hands-on workshops, and unparalleled networking opportunities. Don't miss the chance to shape the future of technology!
+            <!-- Introductory paragraph (p) - description of the event -->
+            <p class="text-lg md:text-xl text-gray-600 mb-12 leading-relaxed max-w-5xl">
+                Join us for the most anticipated tech event of the year! **TechCon 2024** brings together over 5,000 global innovators, engineers, and strategists to explore the practical application of emerging technologies—from advanced neural networks to carbon-negative solutions. This is where inspiration meets implementation.
             </p>
 
             <!-- Embedded Promotional Video -->
-            <div class="max-w-4xl mx-auto mb-10">
-                <h3 class="text-3xl font-semibold text-gray-800 mb-4">Watch the Promo Video</h3>
-                <div class="aspect-video w-full rounded-lg overflow-hidden shadow-xl ring-4 ring-indigo-300">
+            <div class="max-w-5xl mx-auto mb-12">
+                <h3 class="text-2xl font-semibold text-gray-700 mb-5 border-l-4 border-pink-500 pl-3">Conference Sneak Peek</h3>
+                <div class="aspect-video w-full rounded-xl overflow-hidden shadow-2xl ring-4 ring-indigo-100">
                     <video controls class="w-full h-full object-cover" 
-                           poster="https://placehold.co/1280x720/4f46e5/ffffff?text=TechCon+2024+Promo+Placeholder"
-                           aria-describedby="video-description">
-                        <!-- 
-                            NOTE: For a live environment, replace the 'src' attribute 
-                            with the actual path to your video file (e.g., 'promo.mp4').
-                            For this example, we use a structural placeholder.
-                        -->
+                           poster="https://placehold.co/1280x720/4338ca/ffffff?text=TechCon+2024+Video+Preview"
+                           aria-describedby="video-summary">
+                        
+                        <!-- Video source placeholder -->
                         <source src="https://example.com/techcon_promo.mp4" type="video/mp4">
-                        <track kind="captions" label="English Subtitles" src="subtitles.vtt" srclang="en" default>
-                        <p id="video-description" class="p-4 bg-gray-100 text-gray-700">
-                            Your browser does not support the video tag. This video features highlights from previous conferences, interviews with key speakers, and a montage of technology demonstrations.
+                        
+                        <!-- Accessibility: Track for captions/subtitles -->
+                        <track kind="captions" label="English Captions" src="subtitles.vtt" srclang="en" default>
+                        
+                        <!-- Fallback content for accessibility/unsupported browsers -->
+                        <p id="video-summary" class="p-4 bg-yellow-100 text-yellow-800">
+                            Your browser does not support the video tag. This promotional video features interviews, conference highlights, and a look at the venue.
                         </p>
                     </video>
                 </div>
-                <p class="mt-2 text-sm text-gray-500 text-center">Video duration: 1:45. Subtitles are available via the CC button for accessibility.</p>
+                <p class="mt-3 text-sm text-gray-500 text-center">Video duration: 2:05. Ensure controls are visible to enable playback and caption toggling for accessibility.</p>
             </div>
             
-            <div class="text-center">
-                <a href="register.html" class="inline-block bg-pink-600 hover:bg-pink-700 text-white text-xl font-bold py-4 px-10 rounded-full transition duration-300 transform hover:scale-105 shadow-xl">
-                    Secure Your Ticket Now!
+            <div class="text-center pt-8 border-t border-gray-100">
+                <a href="register.html" class="inline-block bg-pink-600 hover:bg-pink-700 text-white text-xl font-bold py-4 px-16 rounded-full transition duration-300 transform hover:scale-105 shadow-2xl ring-4 ring-pink-200">
+                    Register for TechCon 2024
                 </a>
             </div>
         </section>
 
     </main>
 
-    <!-- FOOTER SECTION -->
-    <footer class="bg-gray-800 text-white mt-12">
+    <!-- FOOTER: Copyright Information -->
+    <footer class="bg-gray-900 text-white mt-auto">
         <div class="container mx-auto px-4 py-8 text-center">
-            <p class="text-sm">
-                &copy; 2024 TechCon Conference. All rights reserved.
+            <p class="text-sm text-gray-400">
+                &copy; 2024 TechCon Conference. All rights reserved. 
                 <span class="font-bold text-indigo-400 block sm:inline-block mt-1 sm:mt-0">copyright</span>
             </p>
-            <div class="flex justify-center space-x-4 mt-3">
-                <a href="#" class="text-gray-400 hover:text-white transition duration-200">Privacy Policy</a>
-                <a href="#" class="text-gray-400 hover:text-white transition duration-200">Terms of Service</a>
+            <div class="flex justify-center space-x-6 mt-3 text-xs">
+                <a href="#" class="text-gray-500 hover:text-white transition duration-200">Legal Notice</a>
+                <a href="#" class="text-gray-500 hover:text-white transition duration-200">Media Kit</a>
             </div>
         </div>
     </footer>
